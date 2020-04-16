@@ -322,3 +322,60 @@ public class LessonFirst {
         массивами.
 */
 //________________________________________________________________________________________________
+/*
+Написать программу, которая загадывает случайное число от 0 до 9,
+ и пользователю дается 3 попытки угадать это число. При каждой попытке компьютер
+ должен сообщить больше ли указанное пользователем число чем загаданное, или меньше.
+ После победы или проигрыша выводится запрос – «Повторить игру еще раз?
+ 1 – да / 0 – нет»(1 – повторить, 0 – нет)
+ */
+import java.util.Scanner;
+
+class LessonFirst {
+    public static void main(String[] args) {
+        System.out.println("Угадай число от 0 до 9 за три попытки!!!");
+        System.out.println("ВВЕДИТЕ ЧИСЛО :  ");
+
+        for (int i = 1; i <= 3; i++) {
+            int s = 2;
+            Scanner scan = new Scanner(System.in);
+            int aq = scan.nextInt();
+            int numb = s;
+
+            if (aq == numb) {
+                System.out.println("УГАДАЛ ЭТО " + numb);
+
+            }
+            else   if (aq < numb) {
+                System.out.println("ЗАГАДАННОЕ ЧИСЛО больше " + aq);
+
+            }
+            else if (aq > numb) {
+                System.out.println("ЗАГАДАННОЕ ЧИСЛО меньше " + aq);
+
+            }
+
+            System.out.println( );
+
+        }
+            System.out.println("Повторить игру еще раз?" + " 1 – да / 0 – нет");
+
+            int e = 1;
+            int r = 0;
+            Scanner cd = new Scanner(System.in);
+            int qw = cd.nextInt();
+             if (qw == e) {
+                 return;                //  не понял как вернуть обратно
+             }
+             else if (qw == r) {
+
+        }
+          //      if (qw == e) {
+          //          break;            //  я так понимаю, что нужно остановить выполнение и возвратить в начало
+                                        //    на повтор  круга     ?
+          //      }
+           //     else  (qw == r) break;
+
+
+    }
+}
