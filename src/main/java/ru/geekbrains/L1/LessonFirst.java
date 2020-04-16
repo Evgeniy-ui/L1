@@ -330,8 +330,9 @@ public class LessonFirst {
  1 – да / 0 – нет»(1 – повторить, 0 – нет)
  */
 import java.util.Scanner;
+//import java.util.Random;
 
-class LessonFirst {
+class Lesson {
     public static void main(String[] args) {
         System.out.println("Угадай число от 0 до 9 за три попытки!!!");
         System.out.println("ВВЕДИТЕ ЧИСЛО :  ");
@@ -344,7 +345,7 @@ class LessonFirst {
 
             if (aq == numb) {
                 System.out.println("УГАДАЛ ЭТО " + numb);
-
+                break;
             }
             else   if (aq < numb) {
                 System.out.println("ЗАГАДАННОЕ ЧИСЛО больше " + aq);
@@ -358,23 +359,26 @@ class LessonFirst {
             System.out.println( );
 
         }
-            System.out.println("Повторить игру еще раз?" + " 1 – да / 0 – нет");
+        System.out.println("Повторить игру еще раз?" + " 1 – да / 0 – нет");
+        int e = 1;
+        int r = 0;
+        Scanner cd = new Scanner(System.in);
+        int qw = cd.nextInt();
+        while (true) {
+            if (qw == e) {
+                System.out.println();
 
-            int e = 1;
-            int r = 0;
-            Scanner cd = new Scanner(System.in);
-            int qw = cd.nextInt();
-             if (qw == e) {
-                 return;                //  не понял как вернуть обратно
-             }
-             else if (qw == r) {
-
+                System.out.println("Угадай число от 0 до 9 за три попытки!!!");
+                System.out.println("ВВЕДИТЕ ЧИСЛО :  ");
+                return;
+            }
+            else if(qw == r)  {
+                System.out.println();
+                break;
+            }
+            /// не доконца выполнена программма так как не поймй как возвратить на круг
         }
-          //      if (qw == e) {
-          //          break;            //  я так понимаю, что нужно остановить выполнение и возвратить в начало
-                                        //    на повтор  круга     ?
-          //      }
-           //     else  (qw == r) break;
+
 
 
     }
