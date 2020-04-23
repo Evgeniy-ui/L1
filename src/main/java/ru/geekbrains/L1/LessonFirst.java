@@ -332,7 +332,7 @@ public class LessonFirst {
 import java.util.Scanner;
 //import java.util.Random;
 
-class Lesson {
+class LessonFirst{
     public static void main(String[] args) {
         System.out.println("Угадай число от 0 до 9 за три попытки!!!");
         System.out.println("ВВЕДИТЕ ЧИСЛО :  ");
